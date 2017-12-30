@@ -164,6 +164,7 @@
 				    					<th><span>Thời gian</span></th>
 				    					<th><span>Ngày khai giảng</span></th>
 				    					<th><span>Địa điểm học</span></th>
+				    					<th><span>Học phí</span></th>
 				    					<th><span>Đăng kí</span></th>
 				    				</tr>
 				    			</thead>
@@ -173,9 +174,10 @@
 												<td>${list_class.classname}</td>
 												<td>${list_class.timestudy}</td>
 												<td>${list_class.startday}</td>
+												<td>${course.fee }</td>
 												<td>${list_class.location}</td>
 												
-												<td><a href="Register_Class?class_id=${list_class.class_id}&course_name=${course.coursename }"><i class="fa fa-edit" style="font-size:24px;color:black"></i></a></td>
+												<td><a href="Register_Class?class_id=${list_class.class_id}&course_name=${course.coursename }&fee=${course.fee}"><i class="fa fa-edit" style="font-size:24px;color:black"></i></a></td>
 										</tr>
 												
 									</c:forEach>

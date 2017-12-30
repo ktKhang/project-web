@@ -175,6 +175,7 @@
 							<th>Thời gian</th>
 							<th>Ngày khai giảng</th>
 							<th>Địa điểm học</th>
+							<th>Học phí</th>
 							<th>Đăng kí</th>
 						  </tr>
 						</thead>
@@ -190,6 +191,7 @@
 									<td>${list_class.timestudy }</td>
 									<td>${list_class.startday }</td>
 									<td>${list_class.location }</td>
+									<td>${list_course.fee }</td>
 									<td><button><a href="Register_Class?class_id=${list_class.class_id}&course_name=${list_course.coursename }">Đăng Kí</a></button></td>
 								  </tr>   
 								 

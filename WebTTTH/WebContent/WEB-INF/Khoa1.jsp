@@ -53,6 +53,11 @@
 										<div class="col-md-9 col-xs-5"><input name="ctl00$cphBody$LichHoc" type="text" id="ctl00_cphBody_LichHoc" class="Nhap_lieu" readonly="readonly" value="${class1.timestudy }"></div>
 										<div style="clear:both;"></div>
 									</div>
+									<div class="row" style="margin-top:20px;"> 
+										<div class="col-md-3 col-xs-12" style="margin-top:12px;padding-right:0px;">Học phí:</div>
+										<div class="col-md-9 col-xs-5"><input name="ctl00$cphBody$hocphi" type="text" id="ctl00_cphBody_LichHoc" class="Nhap_lieu" readonly="readonly" value="${fee }"></div>
+										<div style="clear:both;"></div>
+									</div>
 									<div class="row" style="margin-top:20px;">                          
 										<div class="col-md-3 col-xs-12" style="margin-top:12px;padding-right:0px;">Ngày khai giảng:</div>
 										<div class="col-md-9 col-xs-5"><input name="ctl00$cphBody$Ngaykhaigiang" type="text" id="ctl00_cphBody_Ngaykhaigiang" class="Nhap_lieu" readonly="readonly" value="${class1.startday }"></div>

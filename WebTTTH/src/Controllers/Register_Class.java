@@ -41,12 +41,13 @@ public class Register_Class extends HttpServlet {
 			//lấy thông tin từ resquest
 			String class_id=(String)request.getParameter("class_id");
 			String course_name=(String)request.getParameter("course_name");
+			String fee=(String) request.getParameter("fee");
 			int classID=Integer.parseInt(class_id);
 			//
 			Bean.Class class1 = ClassDAO.getInfobyClassID(conn, classID);
 			request.setAttribute("class1", class1);
 			request.setAttribute("course_name", course_name);
-			
+			request.setAttribute("fee",fee);
 			//
 			RequestDispatcher rd= request.getRequestDispatcher("/WEB-INF/Khoa1.jsp");
 			rd.forward(request, response);
