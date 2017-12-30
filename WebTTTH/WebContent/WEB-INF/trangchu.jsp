@@ -185,8 +185,8 @@
 					</div>
 					<div style="width: 87%; float: right;">
 						<h4> Chuyên gia đào tạo</h4>
-						<p class="color_blue" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-					</div>
+						<p class="color_blue" >Đến với trung tâm, bạn sẽ được đào tạo chuyên sâu về tư duy và kĩ năng. Chúng tôi là những chuyên gia đào tạo. Nếu muốn thành công, hãy đến với ITCenter, sự tin tưởng là tuyệt đối.</p>
+					</div>					   
 				</div>
 				<div class="col-md-6 container">
 					<div style="width: 10%; float: left;">
@@ -194,7 +194,7 @@
 					</div>
 					<div style="width: 87%; float: right;">
 						<h4> Cở sở vật chất</h4>
-						<p class="color_blue" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+						<p class="color_blue" >ITCenter - trung tâm được xây dựng với cơ sở vật chất thiết bị hiện đại. Sự hiện đại nơi đây giúp bạn tiếp cận thực tế với nền văn minh nhân loại. ITCenter sẽ là nơi tốt nhất dành cho bạn.</p>
 					</div>
 				</div>
 			</div>
@@ -205,7 +205,7 @@
 					</div>
 					<div style="width: 87%; float: right;">
 						<h4> 1500+ bài học</h4>
-						<p class="color_blue" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+						<p class="color_blue" >Với hơn 1500 khóa học liên quan đến lập trình và máy tính. ITCenter tự tin sẽ cung cấp cho bạn kho tàng kiến thức tuyệt vời mà bạn không thể tìm thấy ở bất cứ nơi đâu.</p>
 					</div>
 				</div>
 				<div class="col-md-6 container">
@@ -214,7 +214,7 @@
 					</div>
 					<div style="width: 87%; float: right;">
 						<h4> Hoạt động</h4>
-						<p class="color_blue" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+						<p class="color_blue" >Cùng với những hoạt động vui chơi giải trí, giao lưu, v.v.. sẽ rèn luyện cho bạn những kĩ năng cần thiết, đồng thời tạo sân chơi lành mạnh sau những giờ học căng thẳng.</p>
 					</div>
 				</div>
 			</div>

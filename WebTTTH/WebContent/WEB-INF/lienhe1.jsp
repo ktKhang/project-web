@@ -22,68 +22,7 @@
 	<script language="javascript" src="js/myjsHome.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<script type="text/javascript">
-		var gmap = new google.maps.LatLng(10.851060, 106.772024);
-		var marker;
-		function initialize()
-		{
-			var mapProp = {
-			center:new google.maps.LatLng(10.851060, 106.772024),
-			zoom:16,
-			mapTypeId:google.maps.MapTypeId.ROADMAP
-			};
-			var map=new google.maps.Map(document.getElementById("googleMap")
-			,mapProp);
-			var styles = [
-			{
-			featureType: 'road.arterial',
-			elementType: 'all',
-			stylers: [
-			{ hue: '#fff' },
-			{ saturation: 100 },
-			{ lightness: -48 },
-			{ visibility: 'on' }
-			]
-			},{
-			featureType: 'road',
-			elementType: 'all',
-			stylers: [
-			]
-			},
-			{
-			featureType: 'water',
-			elementType: 'geometry.fill',
-			stylers: [
-			{ color: '#adc9b8' }
-			]
-			},{
-			featureType: 'landscape.natural',
-			elementType: 'all',
-			stylers: [
-			{ hue: '#809f80' },
-			{ lightness: -35 }
-			]
-			}
-			];
-			var styledMapType = new google.maps.StyledMapType(styles);
-			map.mapTypes.set('Styled', styledMapType);
-			marker = new google.maps.Marker({
-			map:map,
-			draggable:true,
-			animation: google.maps.Animation.DROP,
-			position: gmap
-			});
-			google.maps.event.addListener(marker, 'click', toggleBounce);
-			}
-			function toggleBounce() {
-			if (marker.getAnimation() !== null) {
-			marker.setAnimation(null);
-			} else {
-			marker.setAnimation(google.maps.Animation.BOUNCE);
-			}
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	
 </head>
 <body>
 	<div class="container">
@@ -216,8 +155,10 @@
 		
 	</div>
 	<!--===============GOOGLE MAP==================-->
-	<div class="col-ms-6"> 
-	  	<div id="googleMap" style="width:100%;height:400px;"></div>
+	<div class="col-ms-12"> 
+	  	<div id="map" style="width:100%;height:400px;">
+	  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.479840319647!2d106.76982351418313!3d10.851061660780243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175270ad28d48ab%3A0xa6c02de0a7c40d6c!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgcGjhuqFtIEvhu7kgdGh14bqtdCBUcC4gSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1514609370499" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  	</div>
 	</div>
 	<!--
 	==========================Footer================

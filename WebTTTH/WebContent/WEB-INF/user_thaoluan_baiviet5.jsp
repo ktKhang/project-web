@@ -240,7 +240,8 @@
 								<img src="${account.avatar}">
 							</a>
 						</div>
-						<form action="#" class="col-md-11 col-xs-11">
+						<form action="addCommentUser?role=5&discussionID=${discussionID}&Stitle=${Stitle}" method="post" class="col-md-11 col-xs-11">
+							<input type="hidden" name="accountID" value="${account.account_id}" />
 							<textarea name="message" placeholder="Viết bình luận.." ></textarea>
 							<button type="submit" class="btnPost">Post</button>
 						</form>
