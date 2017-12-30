@@ -81,24 +81,6 @@
                         <p>Quản lí diễn đàn</p>
                     </a>
                 </li>
-                <li>
-                    <a href="accountAdmin">
-                        <i class="ti-face-smile"></i>
-                        <p>Quản lí tài khoản</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="newsAdmin">
-                        <i class="ti-write"></i>
-                        <p>Quản lí tin tức</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="forumAdmin">
-                        <i class="ti-world"></i>
-                        <p>Quản lí diễn đàn</p>
-                    </a>
-                </li>
                 <li class="active-pro">
                     <a href="TrangChu">
                         <i class="ti-home"></i>

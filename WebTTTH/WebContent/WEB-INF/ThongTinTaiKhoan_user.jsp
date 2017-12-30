@@ -375,7 +375,7 @@
 				        <table class="table table-hover" id="myTable">
 				            <thead>
 				            <tr style="cursor: pointer;" class="header">
-				                <th><span class="sort-element" onclick="sortTable(0)">#ClassName</span></span></th>
+				                <th><span class="sort-element" onclick="sortTable(0)">#ClassName</span></th>
 				                <th><span class="sort-element" onclick="sortTable(1)">CourseName</span></th>
 				                <th><span class="sort-element">StartDay</span></th>
 				                <th><span class="sort-element">EndDay</span></th>
@@ -387,37 +387,39 @@
 				            <c:forEach var="row" items="${result.rows}">
 				            <tr style="display: table-row; cursor: pointer;">
 				                <td data-field="#ID">${row.classname}</td>
-					                 <sql:query dataSource="${dbsource}" var="result1">
-					          			select *
-										from course
-										where course_id=${row.course_id} ;
-					       			 </sql:query>
+				                 <sql:query dataSource="${dbsource}" var="result">
+				          			select *
+									from course
+									where course_id=${row.course_id} ;
+				 			      </sql:query>
 				                
-					                <c:forEach var="row1" items="${result1.rows}">
-					                <td data-field="name">${row1.coursename}</td>
-					                </c:forEach>
+				                <c:forEach var="row1" items="${result.rows}">
+				                <td data-field="name">${row1.coursename}</td>
+				                </c:forEach>
 				                <td data-field="date">${row.startday}</td>
 				                <td data-field="date">${row.endday}</td>
 				                <td data-field="status">${row.timestudy}</td>
-					                 <sql:query dataSource="${dbsource}" var="result2">
-					          			select *
-										from student_class
-										where class_id='18' and account_id=55 ;
-					      			 </sql:query>
+				                 <sql:query dataSource="${dbsource}" var="result">
+				          			select *
+									from student_class
+									where class_id=${row.class_id} and account_id=<%=acc.getAccount_id() %> ;
+				      			 </sql:query>
 				                
-					                <c:forEach var="row2n" items="${result2.rows}">
-						                <td>
-						              	  <a class="button button-small list"  href="DeleteStudentClass?sc_id=${row2n.sc_id}&confirm=${row2n.confirm}" title="Edit">
-						                       <c:if test="${row2n.confirm==0}">
-						                        <button>Hủy đăng kí</button>
-						                       </c:if>
-							              </a>
-						                </td>
-					                </c:forEach>
+				                <c:forEach var="row2" items="${result.rows}">
+				               
+				                <td>
+				              					  <a class="button button-small list"  href="DeleteStudentClass?sc_id=${row2.sc_id}" title="Edit">
+				                       <c:if test="${row2.confirm=='0'}">
+				                        <button>Hủy đăng kí </button>
+				                       </c:if>
+					                            </a>
+				                </td>
+				                </c:forEach>
 				            </tr>
 				            </c:forEach>
 				            </tbody>
 				        </table>
+				        
 				    </div>
 				</div>
 			</div>

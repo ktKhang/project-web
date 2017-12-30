@@ -16,7 +16,7 @@ public static List<ViewListStudent> ViewListStudents(Connection conn,int class_i
 		List<ViewListStudent> list= new ArrayList<ViewListStudent>();
 		
 		String sql= " select * "+""
-				+ "from account,(select account_id, point from student_class where class_id= '"+class_id+"')as A"+
+				+ "from account,(select account_id, point from student_class where confirm='1' and class_id= '"+class_id+"')as A"+
 		" where account.account_id=A.account_id ";
 		
 		try {

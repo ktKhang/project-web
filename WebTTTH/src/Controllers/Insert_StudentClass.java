@@ -32,7 +32,7 @@ public class Insert_StudentClass extends HttpServlet {
 		int class_id=Integer.parseInt(Stringclass_id);
 		if(Student_ClassDAO.InsertStudent_Class(conn, account_id, class_id)==true)
 		{
-			request.setAttribute("error","Đăng kí lớp thành công!!!");
+			request.setAttribute("error","Đăng kí lớp thành công! Mời bạn đến trung tâm để đóng tiền!!");
 		}
 		else
 		{

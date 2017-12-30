@@ -29,20 +29,9 @@ public class DeleteStudentClass extends HttpServlet {
 		
 		String sc_id1=(String)request.getParameter("sc_id");
 		System.out.println(sc_id1);
-		String confirm=(String)request.getParameter("confirm");
-		System.out.println(confirm);
 		int sc_id=Integer.parseInt(sc_id1);
-		String string="0";
-		if(confirm.equals(string))
-		{
-			UserDAO.DeleteStudentClass(sc_id);
-			request.getRequestDispatcher("/WEB-INF/ThongTinTaiKhoan_user.jsp").forward(request, response);
-		}
-		else
-		{
-			request.getRequestDispatcher("/WEB-INF/ThongTinTaiKhoan_user.jsp").forward(request, response);
-			
-		}
+		UserDAO.DeleteStudentClass(sc_id);
+		request.getRequestDispatcher("/WEB-INF/ThongTinTaiKhoan_user.jsp").forward(request, response);
 	}
 
 }

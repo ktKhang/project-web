@@ -192,7 +192,7 @@
 									<td>${list_class.startday }</td>
 									<td>${list_class.location }</td>
 									<td>${list_course.fee }</td>
-									<td><button><a href="Register_Class?class_id=${list_class.class_id}&course_name=${list_course.coursename }">Đăng Kí</a></button></td>
+									<td><button><a href="Register_Class?class_id=${list_class.class_id}&course_name=${list_course.coursename }&fee=${list_course.fee}">Đăng Kí</a></button></td>
 								  </tr>   
 								 
 							</c:if>

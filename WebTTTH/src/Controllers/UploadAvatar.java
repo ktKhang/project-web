@@ -53,7 +53,10 @@ public class UploadAvatar extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		Connection conn = DBConnection.CreateConnection();
-		int account_id=1;
+		Account acc1=(Account)request.getSession().getAttribute("account");
+		
+		/*user.setAccount_id(account_id1);*/
+		int account_id=acc1.getAccount_id();
 		String IDupload = request.getParameter("IDupload");
 		System.out.println(IDupload);
 		// checks if the request actually contains upload file
