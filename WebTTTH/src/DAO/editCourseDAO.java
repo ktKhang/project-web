@@ -38,37 +38,6 @@ public class editCourseDAO {
 
 		return false;
 	}
-	public static boolean InsertCourse2(course r, Connection conn) {
-		String sql = "INSERT INTO course (coursename, courseimage, description, info, fee, topic_id) "
-				+ "VALUES (?, ?, ?, ?, ?, ?);\r\n" + 
-				"";
-		
-			try {
-			
-			PreparedStatement ptmt = conn.prepareStatement(sql);
-			
-			ptmt.setString(1, r.getCoursename());
-			ptmt.setString(2, r.getCourseimage());
-			ptmt.setString(3, r.getDescription());
-			ptmt.setString(4, r.getInfo());
-			ptmt.setDouble(5, r.getFee());
-			ptmt.setInt(6, r.getTopic_id());
-			
-			int kt = ptmt.executeUpdate();
-
-			if(kt!=0){
-				
-				return true;
-			}
-			ptmt.close();
-			
-		} catch (SQLException e) {
-			e.printStackTrace();
-			System.out.println("Error :"+e.getMessage());
-		}
-
-		return false;
-	}
 	public static boolean UpdateCourse(course r, Connection conn) {
 		String sql = "update course set  coursename=?, description=?, info=?, "
 				+ " fee=?, topic_id=? where course_id='"+r.getCourse_id()+"';";

@@ -63,5 +63,4 @@ public class updateRoleAccount extends HttpServlet {
 			rd.forward(request, response);
 		}
 	}
-
 }
